@@ -1,3 +1,3 @@
-def katz_deli []
-  line
+def line
+  if line.empty
 end
