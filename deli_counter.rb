@@ -9,3 +9,5 @@ def line(deli)
     puts line
   end
 end
+
+def take_a_number
