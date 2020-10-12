@@ -10,4 +10,16 @@ def line(deli)
   end
 end
 
-def take_a_number(deli,last person)
+def take_a_number(deli, last_person)
+  deli << last_person
+  puts "Welcome, #{last_person}. You are number #{deli.length} in line."
+end
+
+def now_serving(deli)
+  if deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{deli.first}." 
+  end
+  deli.shift
+end
